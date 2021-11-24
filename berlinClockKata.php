@@ -8,4 +8,9 @@ class berlinClockKata
 
         return $nbrEmpoule * 5;
     }
+
+    public function ligne_1_heure(int $nbrEmpoule)
+    {
+        return $nbrEmpoule;
+    }
 }
