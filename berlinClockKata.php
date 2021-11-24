@@ -23,4 +23,14 @@ class berlinClockKata
     {
         return $nbrEmpoule;
     }
+
+    public function ligne_parite_seconde(int $empouleAllume)
+    {
+        if($empouleAllume == 0){
+            return "impaire";
+        }
+        elseif($empouleAllume == 1){
+            return "paire";
+        }
+    }
 }
