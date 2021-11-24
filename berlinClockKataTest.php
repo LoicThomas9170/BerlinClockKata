@@ -62,4 +62,18 @@ class berlinClockKataTest extends TestCase
         $result = $berlinClockKata->ligne_5_minutes(11);
         $this->assertEquals(55, $result);
     }
+
+    public function testLigne1Minute(): void {
+        $berlinClockKata = new berlinClockKata();
+        $result = $berlinClockKata->ligne_1_minute(0);
+        $this->assertEquals(0, $result);
+        $result = $berlinClockKata->ligne_1_minute(1);
+        $this->assertEquals(1, $result);
+        $result = $berlinClockKata->ligne_1_minute(2);
+        $this->assertEquals(2, $result);
+        $result = $berlinClockKata->ligne_1_minute(3);
+        $this->assertEquals(3, $result);
+        $result = $berlinClockKata->ligne_1_minute(4);
+        $this->assertEquals(4, $result);
+    }
 }
