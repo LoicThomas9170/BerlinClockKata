@@ -13,4 +13,9 @@ class berlinClockKata
     {
         return $nbrEmpoule;
     }
+
+    public function ligne_5_minutes(int $nbrEmpoule)
+    {
+        return $nbrEmpoule * 5;
+    }
 }
