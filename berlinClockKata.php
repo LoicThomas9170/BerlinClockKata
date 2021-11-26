@@ -18,7 +18,10 @@ class berlinClockKata
         return (int)($heure/5);
     }
 
-
+    public function secondes(int $secondes){
+        if ($secondes % 2 == 0) return 1;
+        if ($secondes % 2 != 0) return 0;
+    }
     /*------BerlinClock -> Heure normal------*/
     public function ligne_5_heure(int $nbrEmpoule){
         return $nbrEmpoule * 5;
