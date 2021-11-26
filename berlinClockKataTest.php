@@ -5,6 +5,22 @@ use PHPUnit\Framework\TestCase;
 
 class berlinClockKataTest extends TestCase
 {
+   public function testSimpleMinutes() : void{
+       $berlinClockKata = new berlinClockKata();
+       $result = $berlinClockKata->simpleMinutes(0);
+       $this->assertEquals(0, $result);
+       $result = $berlinClockKata->simpleMinutes(1);
+       $this->assertEquals(1, $result);
+       $result = $berlinClockKata->simpleMinutes(2);
+       $this->assertEquals(2, $result);
+       $result = $berlinClockKata->simpleMinutes(3);
+       $this->assertEquals(3, $result);
+       $result = $berlinClockKata->simpleMinutes(4);
+       $this->assertEquals(4, $result);
+   }
+
+
+
 
     /*------BerlinClock -> Heure normal------*/
     public function testPariteSeconde() : void{

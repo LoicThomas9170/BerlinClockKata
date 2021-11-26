@@ -2,6 +2,12 @@
 
 class berlinClockKata
 {
+    public function simpleMinutes(int $simpleMinute)
+    {
+        return $simpleMinute % 5;
+    }
+
+
 
     /*------BerlinClock -> Heure normal------*/
     public function ligne_5_heure(int $nbrEmpoule){
@@ -33,4 +39,6 @@ class berlinClockKata
             return "paire";
         }
     }
+
+
 }
