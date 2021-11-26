@@ -5,6 +5,8 @@ use PHPUnit\Framework\TestCase;
 
 class berlinClockKataTest extends TestCase
 {
+
+    /*------BerlinClock -> Heure normal------*/
     public function testPariteSeconde() : void{
         $berlinClockKata = new berlinClockKata();
         $result = $berlinClockKata->ligne_parite_seconde(0);
