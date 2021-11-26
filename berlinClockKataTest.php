@@ -47,6 +47,20 @@ class berlinClockKataTest extends TestCase
         $this->assertEquals(11, $result);
     }
 
+    public function testSimpleHeure() : void{
+        $berlinClockKata = new berlinClockKata();
+        $result = $berlinClockKata->simpleHeure(0);
+        $this->assertEquals(0, $result);
+        $result = $berlinClockKata->simpleHeure(1);
+        $this->assertEquals(1, $result);
+        $result = $berlinClockKata->simpleHeure(2);
+        $this->assertEquals(2, $result);
+        $result = $berlinClockKata->simpleHeure(3);
+        $this->assertEquals(3, $result);
+        $result = $berlinClockKata->simpleHeure(4);
+        $this->assertEquals(4, $result);
+    }
+
 
     /*------BerlinClock -> Heure normal------*/
     public function testPariteSeconde() : void{
