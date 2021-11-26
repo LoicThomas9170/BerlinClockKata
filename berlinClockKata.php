@@ -22,6 +22,18 @@ class berlinClockKata
         if ($secondes % 2 == 0) return 1;
         if ($secondes % 2 != 0) return 0;
     }
+
+    public function heureTotal(int $heures, int $minutes, int $secondes){
+        $bloc5Heures = strval($this->block5Heure($heures));
+        $simpleHeure = strval($this->simpleHeure($heures));
+        $bloc5Minutes = strval($this->block5Minutes($minutes));
+        $simpleMinutes = strval($this->simpleMinutes($minutes));
+        $secondes = strval($this->secondes($secondes));
+
+        return  $bloc5Heures. " " . $simpleHeure . " " . $bloc5Minutes . " " . $simpleMinutes . " " . $secondes;
+    }
+
+
     /*------BerlinClock -> Heure normal------*/
     public function ligne_5_heure(int $nbrEmpoule){
         return $nbrEmpoule * 5;
@@ -47,6 +59,5 @@ class berlinClockKata
             return "paire";
         }
     }
-
 
 }
