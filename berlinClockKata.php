@@ -14,6 +14,9 @@ class berlinClockKata
         return $heure % 5;
     }
 
+    public function block5Heure(int $heure){
+        return (int)($heure/5);
+    }
 
 
     /*------BerlinClock -> Heure normal------*/
@@ -41,8 +44,6 @@ class berlinClockKata
             return "paire";
         }
     }
-
-
 
 
 }
