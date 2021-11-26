@@ -2,16 +2,18 @@
 
 class berlinClockKata
 {
-    public function simpleMinutes(int $simpleMinute)
+    public function simpleMinutes(int $minute)
     {
-        return $simpleMinute % 5;
+        return $minute % 5;
     }
 
-
+    public function block5Minutes(int $minute)
+    {
+        return (int)($minute / 5);
+    }
 
     /*------BerlinClock -> Heure normal------*/
     public function ligne_5_heure(int $nbrEmpoule){
-
         return $nbrEmpoule * 5;
     }
 

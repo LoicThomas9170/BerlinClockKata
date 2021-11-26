@@ -19,7 +19,33 @@ class berlinClockKataTest extends TestCase
        $this->assertEquals(4, $result);
    }
 
-
+    public function testBlock5Minutes(): void {
+        $berlinClockKata = new berlinClockKata();
+        $result = $berlinClockKata->block5Minutes(0);
+        $this->assertEquals(0, $result);
+        $result = $berlinClockKata->block5Minutes(5);
+        $this->assertEquals(1, $result);
+        $result = $berlinClockKata->block5Minutes(10);
+        $this->assertEquals(2, $result);
+        $result = $berlinClockKata->block5Minutes(15);
+        $this->assertEquals(3, $result);
+        $result = $berlinClockKata->block5Minutes(20);
+        $this->assertEquals(4, $result);
+        $result = $berlinClockKata->block5Minutes(25);
+        $this->assertEquals(5, $result);
+        $result = $berlinClockKata->block5Minutes(30);
+        $this->assertEquals(6, $result);
+        $result = $berlinClockKata->block5Minutes(35);
+        $this->assertEquals(7, $result);
+        $result = $berlinClockKata->block5Minutes(40);
+        $this->assertEquals(8, $result);
+        $result = $berlinClockKata->block5Minutes(45);
+        $this->assertEquals(9, $result);
+        $result = $berlinClockKata->block5Minutes(50);
+        $this->assertEquals(10, $result);
+        $result = $berlinClockKata->block5Minutes(55);
+        $this->assertEquals(11, $result);
+    }
 
 
     /*------BerlinClock -> Heure normal------*/
